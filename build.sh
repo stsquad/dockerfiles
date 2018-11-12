@@ -5,4 +5,4 @@
 NAME=$(id -un)
 TAG=$(basename ${PWD})
 
-docker build -t ${NAME}:${TAG} .
+docker build --build-arg USER=${NAME} -t ${NAME}:${TAG} .
