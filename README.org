@@ -1,9 +1,21 @@
+* Intro
+
+#+BEGIN_VERSE
 These are my Dockerfiles,
 There are many like them but these are mine,
 My Dockerfiles are my friends,
 I must master them as I must master my life,
-Without me they are useless^+^,
-Without them I am useless^++^,
+Without me they are useless, [fn:1]
+Without them I am useless, [fn:2]
+#+END_VERSE
 
-+ they do hardcode my ids in them
-++ hopefully not yet ;-)
+[fn:1] They do hard code my user id in them
+[fn:2] Hopefully not that useless ;-)
+
+* Layout
+
+There is one docker recipe per directory.
+
+* Building
+
+The [[file:build.sh][build script]] is super dumb and basically just works out a tag for the image.
