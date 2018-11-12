@@ -1,0 +1,9 @@
+These are my Dockerfiles,
+There are many like them but these are mine,
+My Dockerfiles are my friends,
+I must master them as I must master my life,
+Without me they are useless^+^,
+Without them I am useless^++^,
+
++ they do hardcode my ids in them
+++ hopefully not yet ;-)
