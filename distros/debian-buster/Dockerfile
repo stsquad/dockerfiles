@@ -19,12 +19,16 @@ RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -yy eatmydata
 RUN DEBIAN_FRONTEND=noninteractive eatmydata \
     apt install -y --no-install-recommends \
+        aptitude \
         bison \
         build-essential \
         ca-certificates \
         debhelper \
         devscripts \
         emacs-nox \
+        fd-find \
         fakeroot \
+        git \
+        less \
         silversearcher-ag \
         zile
