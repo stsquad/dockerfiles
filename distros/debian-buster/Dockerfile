@@ -1,7 +1,7 @@
 #
 # Debian Buster - Base environment
 #
-FROM debian:buster
+FROM debian:buster-slim
 
 # We create a USER with the same UID as the host. This is to enable
 # easy mapping when running containers mapped to the host environment.
@@ -26,9 +26,12 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
         debhelper \
         devscripts \
         emacs-nox \
-        fd-find \
         fakeroot \
+        fish \
+        fd-find \
         git \
+        kbd \
         less \
+        pkg-config \
         silversearcher-ag \
         zile
