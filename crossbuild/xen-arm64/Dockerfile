@@ -18,6 +18,8 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
 RUN DEBIAN_FRONTEND=noninteractive eatmydata \
     apt-get install -y --no-install-recommends \
         crossbuild-essential-arm64 \
+        checkpolicy \
+        flex \
         uuid-dev:arm64 \
         libpython3-dev:arm64 \
         libfdt-dev:arm64 \

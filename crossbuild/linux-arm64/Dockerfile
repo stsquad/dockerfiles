@@ -20,6 +20,7 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
         libpython3-dev:arm64 \
         libfdt-dev:arm64 \
         libncurses-dev \
+        libssl-dev \
         libyajl-dev:arm64 \
         zlib1g-dev:arm64
 RUN DEBIAN_FRONTEND=noninteractive eatmydata \
