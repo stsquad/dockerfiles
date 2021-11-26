@@ -6,3 +6,4 @@ FROM ${USER}:debian-buster-armhf
 
 # Build deps
 RUN DEBIAN_FRONTEND=noninteractive eatmydata apt build-dep -y --arch-only qemu
+RUN DEBIAN_FRONTEND=noninteractive eatmydata apt install ninja-build
