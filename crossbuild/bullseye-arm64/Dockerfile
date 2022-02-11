@@ -12,12 +12,14 @@ RUN dpkg --add-architecture arm64
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive eatmydata \
     apt-get install -y --no-install-recommends \
-        crossbuild-essential-arm64
-RUN DEBIAN_FRONTEND=noninteractive eatmydata \
-    apt-get build-dep -yy -a arm64 linux-image-arm64
+        crossbuild-essential-arm64 \
+        gcc-aarch64-linux-gnu
 
-RUN DEBIAN_FRONTEND=noninteractive eatmydata \
-    apt-get build-dep -yy xen
+# RUN DEBIAN_FRONTEND=noninteractive eatmydata \
+#     apt-get build-dep -yy -a arm64 linux-image-arm64
+
+# RUN DEBIAN_FRONTEND=noninteractive eatmydata \
+#     apt-get build-dep -yy -a arm64 xen
 
 # RUN DEBIAN_FRONTEND=noninteractive eatmydata \
 #     apt-get build-dep -yy -a arm64 --arch-only qemu
