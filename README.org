@@ -9,7 +9,7 @@ Without me they are useless, [fn:1]
 Without them I am useless, [fn:2]
 #+END_VERSE
 
-[fn:1] They do hard code my user id in them
+[fn:1] They do sometimes hard code my user id in them
 [fn:2] Hopefully not that useless ;-)
 
 * Layout
@@ -18,4 +18,8 @@ There is one docker recipe per directory.
 
 * Building
 
-The [[file:build.sh][build script]] is super dumb and basically just works out a tag for the image.
+The [[file:build.sh][build script]] is super dumb and basically just works out a tag for
+the image and sets a few arguments. Because it snarfs details from uid
+it expects to be running the docker tools as the user. Typically this
+means you need to be a member of the `docker` group.
+
