@@ -14,7 +14,19 @@ Without them I am useless, [fn:2]
 
 * Layout
 
-There is one docker recipe per directory.
+There is one docker recipe per directory. Some recipes require a
+previous layer to be built. For example:
+
+#+name: building-cross-environment
+#+header: :results output
+#+begin_src sh 
+ cd distros/debian-bullseye/
+  ../../build.sh
+ cd ../../crossbuild/bullseye-arm64/
+ ../../build.sh
+#+end_src
+
+there is no magic orchestration to do this so look at the Dockerfile.
 
 * Building
 
