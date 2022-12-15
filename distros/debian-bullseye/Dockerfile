@@ -1,5 +1,5 @@
 #
-# Debian Bullseye (current testing) - Base environment
+# Debian Bullseye - Base environment
 #
 FROM debian:bullseye-slim
 

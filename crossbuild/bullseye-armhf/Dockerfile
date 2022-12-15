@@ -14,7 +14,7 @@ RUN apt upgrade -yy && apt autoremove -yy
 RUN DEBIAN_FRONTEND=noninteractive eatmydata \
     apt-get install -y --no-install-recommends \
         crossbuild-essential-armhf \
-        gcc-aarch64-linux-gnu
+        gcc-arm-linux-gnueabihf
 
 # RUN DEBIAN_FRONTEND=noninteractive eatmydata \
 #     apt-get build-dep -yy -a armhf linux-image-armhf
@@ -30,11 +30,11 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
         acpica-tools \
         checkpolicy \
         flex \
+        uuid-dev \
+        libfdt-dev \
         libncurses-dev \
-        libssl-dev \
-        uuid-dev:armhf \
-        libpython3-dev:armhf \
-        libfdt-dev:armhf \
         libncurses-dev:armhf \
-        libyajl-dev:armhf \
-        zlib1g-dev:armhf
+        libpython3-dev:armhf \
+        libssl-dev \
+        libyajl-dev \
+        zlib1g-dev
