@@ -8,7 +8,7 @@
 # build on top of the base debian image.
 #
 ARG USER
-FROM ${USER}:debian-buster
+FROM ${USER}:debian-bookworm
 
 # Setup for cross-build
 RUN dpkg --add-architecture arm64
@@ -25,4 +25,5 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
         libfdt-dev:arm64 \
         libncurses-dev:arm64 \
         libyajl-dev:arm64 \
+        libzstd-dev:arm64 \
         zlib1g-dev:arm64
