@@ -11,6 +11,7 @@ ADD raspberrypi-archive-stable.gpg /etc/apt/trusted.gpg.d/raspberrypi-archive-st
 
 # Install common build utilities
 RUN apt update
+RUN apt dist-upgrade -yy
 RUN DEBIAN_FRONTEND=noninteractive apt install -yy eatmydata
 RUN DEBIAN_FRONTEND=noninteractive eatmydata \
     apt install -y --no-install-recommends \
@@ -36,8 +37,10 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
         rpi-wayland \
         sudo \
         kodi \
+        kodi-addon-dev \
+        kodi-inputstream-adaptive \
         kodi-bin \
-      	libgl1-mesa-dri \
+        libgl1-mesa-dri \
         libraspberrypi-bin \
         udev
 
