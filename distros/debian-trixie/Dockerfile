@@ -26,5 +26,7 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
         devscripts \
         emacs-nox \
         fakeroot \
+        fish \
+        libncurses-dev \
         silversearcher-ag \
         zile
