@@ -19,6 +19,7 @@ RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -yy eatmydata
 RUN DEBIAN_FRONTEND=noninteractive eatmydata \
     apt install -y --no-install-recommends \
+        bc \
         bison \
         build-essential \
         ca-certificates \
@@ -27,6 +28,10 @@ RUN DEBIAN_FRONTEND=noninteractive eatmydata \
         emacs-nox \
         fakeroot \
         fish \
+        flex \
+        gdb-multiarch \
         libncurses-dev \
+        libssl-dev \
+        openssl \
         silversearcher-ag \
         zile
