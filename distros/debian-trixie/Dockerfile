@@ -1,7 +1,7 @@
 #
 # Debian Trixie
 #
-FROM debian:trixie
+FROM debian:trixie-slim
 
 # We create a USER with the same UID as the host. This is to enable
 # easy mapping when running containers mapped to the host environment.
