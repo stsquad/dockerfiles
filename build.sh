@@ -6,7 +6,9 @@ NAME=$(id -un)
 USERID=$(id -u)
 TAG=$(basename ${PWD})
 
-docker build $1 \
+cmd_c=$(command -v "docker" || command -v "podman")
+
+$cmd_c build $1 \
        --build-arg USER=${NAME} \
        --build-arg UID=${USERID} \
        -t ${NAME}:${TAG} .
